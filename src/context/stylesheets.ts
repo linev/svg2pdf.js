@@ -1,4 +1,4 @@
-import { compare as compareSpecificity } from 'specificity'
+// import { compare as compareSpecificity } from 'specificity'
 import { nodeIs } from '../utils/node'
 
 export class StyleSheets {
@@ -179,7 +179,9 @@ export class StyleSheets {
       if (priorityA !== priorityB) {
         return priorityA === 'important' ? 1 : -1
       }
-      return compareSpecificity(a.selectorText, b.selectorText)
+      console.log('removed specificity check ', a.selectorText, b.selectorText);
+      return 0;
+      // return compareSpecificity(a.selectorText, b.selectorText)
     }
     const mostSpecificRule = matchingRules.reduce((previousValue, currentValue) =>
       compare(previousValue, currentValue) === 1 ? previousValue : currentValue
