@@ -18,7 +18,7 @@ import { Polyline } from './nodes/polyline'
 import { Svg } from './nodes/svg'
 import { Group } from './nodes/group'
 import { Anchor } from './nodes/anchor'
-import cssesc from 'cssesc'
+// import cssesc from 'cssesc'
 import { ClipPath } from './nodes/clippath'
 import { Symbol } from './nodes/symbol'
 
@@ -92,7 +92,8 @@ export function parse(node: Element, idMap?: { [id: string]: SvgNode }): SvgNode
   }
 
   if (idMap != undefined && svgnode.element.hasAttribute('id')) {
-    const id = cssesc(svgnode.element.id, { isIdentifier: true })
+    // const id = cssesc(svgnode.element.id, { isIdentifier: true })
+    const id = svgnode.element.id; // jsroot has plain ids
     idMap[id] = idMap[id] || svgnode
   }
 
