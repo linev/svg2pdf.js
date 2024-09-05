@@ -51,10 +51,8 @@
     "jspdf": "^2.0.0"
   },
   "dependencies": {
-    "cssesc": "^3.0.0",
     "font-family-papandreou": "^0.2.0-patch1",
-    "svgpath": "^2.3.0",
-    "specificity": "^0.4.1"
+    "svgpath": "^2.3.0"
   },
   "devDependencies": {
     "@rollup/plugin-typescript": "^5.0.2",

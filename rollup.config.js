@@ -20,7 +20,6 @@ const umdExternals = [
 const externals = [...Object.keys(pkg.dependencies || {}), ...umdExternals]
 
 const globals = {
-  cssesc: 'cssesc',
   jspdf: 'jspdf',
   svgpath: 'svgpath'
 }
