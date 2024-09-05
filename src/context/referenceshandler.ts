@@ -1,4 +1,4 @@
-import cssEsc from 'cssesc'
+// import cssEsc from 'cssesc'
 import { SvgNode } from '../nodes/svgnode'
 import { RGBColor } from '../utils/rgbcolor'
 
@@ -33,7 +33,8 @@ export class ReferencesHandler {
   }
 
   get(id: string): SvgNode {
-    return this.idMap[cssEsc(id, { isIdentifier: true })]
+    // return this.idMap[cssEsc(id, { isIdentifier: true })]
+    return this.idMap[id] // jsroot uses plain ids
   }
 
   public generateKey(id: string, color: RGBColor | null): string {
