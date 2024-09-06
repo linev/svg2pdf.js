@@ -13,15 +13,18 @@ function licenseBanner() {
   })
 }
 
-const umdExternals = [
-  ...Object.keys(pkg.peerDependencies || {}),
-  ...Object.keys(pkg.optionalDependencies || {})
-]
-const externals = [...Object.keys(pkg.dependencies || {}), ...umdExternals]
+//const umdExternals = [
+//  ...Object.keys(pkg.peerDependencies || {}),
+//  ...Object.keys(pkg.optionalDependencies || {})
+//]
+// const externals = [...Object.keys(pkg.dependencies || {}), ...umdExternals]
+
+const externals = [ 'jspdf' ];
+const umdExternals = [ 'jspdf' ];
+
 
 const globals = {
-  jspdf: 'jspdf',
-  svgpath: 'svgpath'
+  jspdf: 'jspdf'
 }
 
 const umd = {
