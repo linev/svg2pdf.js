@@ -21,9 +21,7 @@
   "moduleType": ["amd", "globals", "node"],
   "ignore": ["**/.*", "node_modules", "bower_components", "test", "tests"],
   "dependencies": {
-    "cssesc": "^3.0.0",
     "font-family-papandreou": "^0.2.0-patch1",
-    "svgpath": "^2.3.0",
-    "specificity": "^0.4.1"
+    "svgpath": "^2.3.0"
   }
 }

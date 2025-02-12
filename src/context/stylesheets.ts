@@ -179,7 +179,7 @@ export class StyleSheets {
       if (priorityA !== priorityB) {
         return priorityA === 'important' ? 1 : -1
       }
-      console.log('removed specificity check ', a.selectorText, b.selectorText);
+      // console.log('removed specificity check ', a.selectorText, b.selectorText);
       return 0;
       // return compareSpecificity(a.selectorText, b.selectorText)
     }
